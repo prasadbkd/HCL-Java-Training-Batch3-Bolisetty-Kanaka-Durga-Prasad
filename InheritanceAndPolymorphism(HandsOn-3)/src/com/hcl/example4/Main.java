@@ -13,13 +13,23 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		choice = Integer.parseInt(br.readLine());
 		if (choice == 1) {
-			Circle c = new Circle();
+			System.out.println("Enter the radius: ");
+			int radius = Integer.parseInt(br.readLine());
+			Circle c = new Circle(radius);
 			c.computeArea();
 		} else if (choice == 2) {
-			Rectangle r = new Rectangle();
+			System.out.println("Enter the length: ");
+			double length = Double.parseDouble(br.readLine());
+			System.out.println("Enter the breadth : ");
+			double breadth = Double.parseDouble(br.readLine());
+			Rectangle r = new Rectangle(length, breadth);
 			r.computeArea();
 		} else if (choice == 3) {
-			Triangle t = new Triangle();
+			System.out.println("Enter the base: ");
+			double base = Double.parseDouble(br.readLine());
+			System.out.println("Enter the height : ");
+			double height = Double.parseDouble(br.readLine());
+			Triangle t = new Triangle(base, height);
 			t.computeArea();
 		} else {
 			System.out.println("Invalid choice");
