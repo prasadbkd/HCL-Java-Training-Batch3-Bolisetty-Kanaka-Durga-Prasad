@@ -14,13 +14,21 @@ public class Main {
 			System.out.println("\nenter the choice");
 			choice = Integer.parseInt(br.readLine());
 			if (choice == 1) {
-				Shape c = new Circle();
+				System.out.println("Enter the radius: ");
+				int radius = Integer.parseInt(br.readLine());
+				Shape c = new Circle(radius);
 				System.out.printf("The Perimeter of circle is %.2f", c.calculatePerimeter());
 			} else if (choice == 2) {
-				Shape r = new Rectangle();
+				System.out.println("Enter the length: ");
+				double length = Double.parseDouble(br.readLine());
+				System.out.println("Enter the breadth : ");
+				double breadth = Double.parseDouble(br.readLine());
+				Shape r = new Rectangle(length, breadth);
 				System.out.printf("The Perimeter of Rectangle is %.2f", r.calculatePerimeter());
 			} else if (choice == 3) {
-				Shape s = new Square();
+				System.out.println("Enter the side: ");
+				int side = Integer.parseInt(br.readLine());
+				Shape s = new Square(side);
 				System.out.printf("The Perimeter of Square is %.2f", s.calculatePerimeter());
 			} else if (choice == 4) {
 				System.out.println("Thank you");

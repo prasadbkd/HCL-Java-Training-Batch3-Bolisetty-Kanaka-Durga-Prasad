@@ -1,8 +1,5 @@
 package com.hcl.example1;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class Square extends Shape {
 	private double side;
 
@@ -25,13 +22,8 @@ public class Square extends Shape {
 	@Override
 	public double calculatePerimeter() {
 		double perimeter;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			System.out.println("Enter the side: ");
-			this.setSide(Double.parseDouble(br.readLine()));
-		} catch (Exception e) {
-		}
-		perimeter = 4 * side;
+		
+		perimeter = 4 * this.side;
 		return perimeter;
 	}
 

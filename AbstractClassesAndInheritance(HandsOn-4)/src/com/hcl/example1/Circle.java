@@ -1,9 +1,5 @@
 package com.hcl.example1;
 
-import java.io.BufferedReader;
-//import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class Circle extends Shape {
 	private double radius;
 
@@ -25,13 +21,10 @@ public class Circle extends Shape {
 
 	public double calculatePerimeter() {
 		double perimeter;
-		try {
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			System.out.println("Eneter the radius: ");
-			this.setRadius(Double.parseDouble(br.readLine()));
-		} catch (Exception e) {
-		}
-		perimeter = 2 * 3.14 * radius;
+
+		System.out.println("Eneter the radius: ");
+
+		perimeter = 2 * 3.14 * this.radius;
 		return perimeter;
 	}
 }

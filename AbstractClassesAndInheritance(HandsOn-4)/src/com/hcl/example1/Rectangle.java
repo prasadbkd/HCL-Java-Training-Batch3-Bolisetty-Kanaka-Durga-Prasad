@@ -1,8 +1,5 @@
 package com.hcl.example1;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
 public class Rectangle extends Shape {
 	private double length;
 	private double breadth;
@@ -34,15 +31,8 @@ public class Rectangle extends Shape {
 
 	public double calculatePerimeter() {
 		double perimeter;
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			System.out.println("Enter the length: ");
-			length = Double.parseDouble(br.readLine());
-			System.out.println("Enter the breadth : ");
-			breadth = Double.parseDouble(br.readLine());
-		} catch (Exception e) {
-		}
-		perimeter = 2 * (length + breadth);
+
+		perimeter = 2 * (this.length + this.breadth);
 		return perimeter;
 	}
 }
