@@ -22,7 +22,7 @@ public class Circle extends Shape {
 	public double calculatePerimeter() {
 		double perimeter;
 
-		System.out.println("Eneter the radius: ");
+		
 
 		perimeter = 2 * 3.14 * this.radius;
 		return perimeter;
