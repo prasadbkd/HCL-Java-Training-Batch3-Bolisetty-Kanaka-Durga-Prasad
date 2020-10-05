@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+    <style>
+        #ui{
+            text-align: center;
+            padding: 16px;
+        }
+        button{
+            margin: 10px;
+            border-radius: 5px;
+            
+        }
+        #resList{ display: inline-block;
+        list-style-position: inside;
+       }
+       #result{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h1>Validating The duplicate Elements</h1>
+        Enter the Event Name : <input type="text" id="input1">
+        <br>
+        <button id="btn1">PusH</button>
+        <button id="btn2">PoP</button>
+        <button id="btn3">Display Events</button>
+    </div>
+    <div id="sucessMessage">
+    </div>
+    <div id=result>
+        <ul id="resList"></ul>
+    </div>
+   
+    
+</body>
+</html>
