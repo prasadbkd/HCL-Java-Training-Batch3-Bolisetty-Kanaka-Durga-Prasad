@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:component-scan base-package="{com.hcl.example8}"></context:component-scan>
+<bean id="order1" class="com.hcl.example8.Order">
+	<property name="itemName" value="TV"></property>
+	<property name="price" value="20000"></property>
+</bean>
+<bean id="order2" class="com.hcl.example8.Order">
+	<property name="itemName" value="Mobile"></property>
+	<property name="price" value="20000"></property>
+</bean>
+<bean id="user" class="com.hcl.example8.User" >
+	<property name="name" value="Ramesh"></property>
+	<property name="age" value="20"></property>
+	<property name="city" value="Chennai"></property>
+</bean>
+</beans>
